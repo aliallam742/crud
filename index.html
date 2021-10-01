@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="crud / add/remove/ update /">
+        <title>crud system </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="ham" id="humBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="nav">
+                <ul class="navs">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cpanel">C-panel</a></li>
+                    <li><a href="#table">Products</a></li>
+                </ul>
+            </nav>
+            <div class="logoo"><img src="images/th.jfif"  class="w-100"alt="" srcset=""></div>
+        </div>
+        <div class="home" id="home">
+            <div class="massege text-center ">
+                <h1>Welcome</h1>
+                <h3 class="fs-2 text-white"></h3>
+            </div>
+        </div>
+        <div id="cpanel" class=" mb-5 py-5 bg-light">
+            <h2 class="text-center">Add product</h2>
+            <div class="container">
+                <div class="crud text-center">
+                    <input type="file" accept="image/gif, image/jpeg, image/png, image/jpeg" name="image" class="form-control d-none"  placeholder="product picture" id="picture">
+                    <label for="picture" class="btn btn-secondary form-control d-flex align-items-center"><i class="far fa-image me-3 fs-3"></i>choose a product image</label>
+                    <input type="text" class="form-control my-4" placeholder="product Name" id="productName">
+                    <div class="alert alert-warning my-4 d-none " id="alert" role="alert">
+                        Name is-invalid ! please Please enter correct name
+                    </div>
+                    <input type="text" class="form-control" placeholder="product Price" id ="productPrice">
+                    <input type="text" class="form-control my-4" placeholder= "product description" id="productDescription">
+                    <button class="btn btn-primary form-control" id='add-button'>Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="table" class="py-5 my-5">
+            <div class="container">
+                <div class="input-search">
+                    <input type="search"  class="search"id="search">
+                    <i class="fa fa-search" id="icon"></i>
+                </div>
+                <div class="row my-5" id="display-data">
+                </div>
+            </div>
+        </div>
+        <div class="information" id="info">
+            <div class='image-info position-relative'>
+                <i class="fa fa-times-circle icon" id='close'></i>
+                <img src="" id="pic" alt="">
+                <h2 id="infoProductName">name</h2>
+                <h3 id="infoProductPrice">1000$</h3>
+                <h5 id="infoProductDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore obcaecati magni consequatur sapiente commodi neque, debitis fugiat alias eveniet qui, officiis beatae ratione quaerat autem reprehenderit excepturi eius id nulla.</h5>
+            </div>
+        </div>
+        <div class="footer  mt-5 bg-dark py-2">
+            <p class="text-center text-white ">CopyRight &copy; all rights reserved  by Ali allam</p>
+            <div class="clr"></div>
+            <div class="icons">
+                <ul>
+                    <a href="https://www.facebook.com/ali.allam.5680899" target="_blank">
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ali-allam-890218209/" target="_blank">
+                        <li>
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                    <a  href="mailto:aliallam7472@gmail.com" target="_blank">
+                        <li>
+                            <i class="fab fa-google"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

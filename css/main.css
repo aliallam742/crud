@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.home{
+    height: 100vh;
+    background-image: url(../images/pexels-photo-1005638.jpeg);
+    box-shadow: inset 0 0 0 100000px rgba(0, 0, 0,.5);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.massege h1{
+    color: #FFF;
+    font-size: 60px;
+}
+.ham{
+    display: none;
+}
+.ham  div{
+    width:30px;
+    height: 5px;
+    background-color: #FFF;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,1);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.logoo{
+    width: 100px;
+}
+.logoo img{
+    height:60px;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#FFF;
+    padding: 15px;
+    transition: all .5s;
+}
+nav ul li a:hover{
+    transition: all 1s;
+    border-bottom: 1px solid tomato;
+    color: tomato;
+}
+.massege h3::after{
+    content: "";
+    animation-name: typing;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content:"C|"}
+    1%{content:"CR|"}
+    2%{content:"CRU|"}
+    3%{content:"CRUD|"}
+    4%{content:"CRUD |"}
+    5%{content:"CRUD S|"}
+    6%{content:"CRUD Sy|"}
+    7%{content:"CRUD Sys|"}
+    8%{content:"CRUD Syst|"}
+    9%{content:"CRUD Syste|"}
+    10%{content:"CRUD System|"}
+    11%{content:"CRUD Syste|"}
+    12%{content:"CRUD Syst|"}
+    13%{content:"CRUD Sys|"}
+    14%{content:"CRUD Sy|"}
+    15%{content:"CRUD S|"}
+    16%{content:"CRUD |"}
+    17%{content:"CRUD|"}
+    18%{content:"CRU|"}
+    19%{content:"CR|"}
+    20%{content:"C|"}
+    21%{content:"|"}
+    22%{content:"A|"}
+    23%{content:"Al|"}
+    24%{content:"Ali|"}
+    25%{content:"Ali |"}
+    26%{content:"Ali A|"}
+    27%{content:"Ali Al|"}
+    28%{content:"Ali All|"}
+    29%{content:"Ali Alla|"}
+    30%{content:"Ali Allam|"}
+    31%{content:"Ali Allam |"}
+    32%{content:"Ali Allam D|"}
+    33%{content:"Ali Allam De|"}
+    34%{content:"Ali Allam Des|"}
+    35%{content:"Ali Allam Desi|"}
+    36%{content:"Ali Allam Desig|"}
+    37%{content:"Ali Allam Design|"}
+    38%{content:"Ali Allam Desig|"}
+    39%{content:"Ali Allam Desi|"}
+    40%{content:"Ali Allam Des|"}
+    41%{content:"Ali Allam De|"}
+    42%{content:"Ali Allam D|"}
+    43%{content:"Ali Allam De|"}
+    44%{content:"Ali Allam Dev|"}
+    45%{content:"Ali Allam Deve|"}
+    46%{content:"Ali Allam Devel|"}
+    48%{content:"Ali Allam Develo|"}
+    49%{content:"Ali Allam Develop|"}
+    50%{content:"Ali Allam Develope|"}
+    51%{content:"Ali Allam Developer|"}
+    52%{content:"Ali Allam Develope|"}
+    53%{content:"Ali Allam Develop|"}
+    54%{content:"Ali Allam Develo|"}
+    56%{content:"Ali Allam Devel|"}
+    57%{content:"Ali Allam Deve|"}
+    58%{content:"Ali Allam Dev|"}
+    59%{content:"Ali Allam De|"}
+    60%{content:"Ali Allam D|"}
+    61%{content:"Ali Allam |"}
+    62%{content:"Ali Allam|"}
+    63%{content:"Ali Alla|"}
+    64%{content:"Ali All|"}
+    65%{content:"Ali Al|"}
+    66%{content:"Ali A|"}
+    67%{content:"Ali |"}
+    68%{content:"Ali|"}
+    69%{content:"Al|"}
+    70%{content:"A|"}
+    71%{content:"|"}
+    72%{content:"T|"}
+    73%{content:"To|"}
+    74%{content:"To M|"}
+    75%{content:"To My|"}
+    76%{content:"To My W|"}
+    78%{content:"To My Wo|"}
+    79%{content:"To My Wor|"}
+    80%{content:"To My Worl|"}
+    81%{content:"To My Worle|"}
+    82%{content:"To My Worled|"}
+    83%{content:"To My Worle|"}
+    84%{content:"To My Worl|"}
+    85%{content:"To My Wor|"}
+    86%{content:"To My Wo|"}
+    87%{content:"To My W|"}
+    89%{content:"To My |"}
+    90%{content:"To My|"}
+    91%{content:"To M|"}
+    92%{content:"To |"}
+    93%{content:"To|"}
+    94%{content:"T|"}
+    95%{content:"|"}
+    96%{content:"|";opacity: 1;}
+    97%{content:"|";opacity: 0;}
+    98%{content:"|";opacity: 1;}
+    99%{content:"|";opacity: 0;}
+    100%{content:"|";opacity: 1;}
+}
+/* .pic{
+    width:100px;
+    height:100px;
+    cursor: pointer;
+} */
+.information{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0,.8);
+    z-index: 10;
+
+}
+.col-md-4{
+    margin: 10px 0;
+}
+.card img{
+    height: 50vh;
+    cursor: pointer;
+}
+.image-info{
+    width:80%;
+    color: #FFF;
+    text-align: center;
+}
+.image-info img{
+    width: 100%;
+    height: 500px;
+}
+.icon{
+    transform: translate(21px, -53px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.input-search{
+    position: relative;
+}
+.input-search i {
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(50%,-50%);
+    font-size: 25px;
+    color: rgb(40, 80, 104);
+    cursor: pointer;
+}
+.search{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border : 5px solid rgb(40, 80, 104);
+    outline: none;
+    transition: all .2s;
+}
+.overraidSearch{
+    width:100%;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.icons{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.icons ul a{
+    text-decoration: none;
+    color: #000;
+}
+.icons ul li {
+    border-radius: 50%;
+    padding: 10px 15px ;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    list-style: none;
+    background-color: #FFF;
+}
+.clr{
+    clear: both;
+}
+.tran{
+    transform: translateY(0);
+}
+
+@media (max-width:1000px) {
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 89px;
+        left: 0;
+        transform: translatey(-150%);
+        transition: all 2s;
+        background-color: rgba(0, 0, 0,.8);
+        text-align: center;
+    }
+    nav ul li {
+        float: none;
+        margin: 30px 0;
+    }
+    .ham{
+        display: block;
+    }
+    footer h4 {
+        font-size: 14px;
+    }
+}
+.bin{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.bin:hover{
+    background-color:rgba(255, 0, 0, 1) ;
+}
+#del{
+    display: none;
+}
